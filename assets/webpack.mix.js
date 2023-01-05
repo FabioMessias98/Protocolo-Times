@@ -17,8 +17,7 @@ mix.js("resources/js/main.js", "public/js");
 mix
   .sass("resources/scss/main.scss", "public/css")
   .sourceMaps(true, "source-map")
-  .copyDirectory("resources/fonts", "public/fonts")
-  .tailwind();
+  .copyDirectory("resources/fonts", "public/fonts");
 mix.webpackConfig({
   plugins: [
     new CopyWebpackPlugin([

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="assets/public/css/main.css">
         <title>Protocolo Times</title>
     </head>
     <body>
-        <section class="l-box">
+        <section class="w-full h-screen flex justify-center items-center">
             <div class="c-circle">
                 <h4 class="c-circle__text">
                     iniciar
@@ -16,21 +20,33 @@
             </div>
         </section>
 
-        <section class="l-box">
-            <h3 class="u-font-size-20 text-lg u-font-weight-bold text-center text-uppercase u-color-folk-white">
+        <section class="w-full h-screen flex flex-col justify-center items-center">
+            <h3 class="text-xl font-bold text-center uppercase text-white">
                 quanto tempo irá estudar?
             </h3>
 
-            <div>
-                <div>
+            <div class="mt-8">
+                <div class="w-20 h-20 rounded-xl overflow-hidden">
                     <input
-                    class=""
+                    class="w-full h-full outline-0 text-3xl font-bold text-center px-2"
                     type="">
+                </div>
+
+                <div>
+                    <!-- select -->
+                    <div>
+                        <div>
+                            <p>
+                                Selecionar
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end select -->
                 </div>
             </div>
         </section>
 
-        <section class="l-box">
+        <section class="w-full h-screen flex justify-center items-center">
             <div class="c-circle">
                 <h4 class="c-circle__text">
                     começar
