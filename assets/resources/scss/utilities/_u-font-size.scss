@@ -1,0 +1,600 @@
+$utility-name: 'u-font-size';
+
+.#{$utility-name} {
+    &-0 {
+        font-size: 0 !important;
+    }
+
+    &-7 {
+        font-size: .4375rem !important;
+    }
+
+    &-8 {
+        font-size: .5rem !important;
+    }
+
+    &-9 {
+        font-size: .5625rem !important;
+    }
+
+    &-10 {
+        font-size: .625rem !important;
+    }
+
+    &-11 {
+        font-size: .6875rem !important;
+    }
+
+    &-12 {
+        font-size: .75rem !important;
+    }
+
+    &-13 {
+        font-size: .8125rem !important;
+    }
+
+    &-14 {
+        font-size: .875rem !important;
+    }
+
+    &-15 {
+        font-size: .9375rem !important;
+    }
+
+    &-16 {
+        font-size: 1rem !important;
+    }
+
+    &-17 {
+        font-size: 1.0625rem !important;
+    }
+
+    &-18 {
+        font-size: 1.125rem !important;
+    }
+}
+
+//before
+.before\:\: {
+    &#{$utility-name} {
+        &-0 {
+            &::before {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            &::before {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            &::before {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            &::before {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            &::before {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            &::before {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            &::before {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            &::before {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            &::before {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            &::before {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            &::before {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            &::before {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//after
+.after\:\: {
+    &#{$utility-name} {
+        &-0 {
+            &::after {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            &::after {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            &::after {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            &::after {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            &::after {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            &::after {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            &::after {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            &::after {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            &::after {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            &::after {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            &::after {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            &::after {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//query sm
+.sm\: {
+    &#{$utility-name} {
+        &-0 {
+            @media screen and (min-width: 576px) {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            @media screen and (min-width: 576px) {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            @media screen and (min-width: 576px) {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            @media screen and (min-width: 576px) {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            @media screen and (min-width: 576px) {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            @media screen and (min-width: 576px) {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            @media screen and (min-width: 576px) {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            @media screen and (min-width: 576px) {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            @media screen and (min-width: 576px) {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            @media screen and (min-width: 576px) {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            @media screen and (min-width: 576px) {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            @media screen and (min-width: 576px) {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//query md
+.md\: {
+    &#{$utility-name} {
+        &-0 {
+            @media screen and (min-width: 768px) {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            @media screen and (min-width: 768px) {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            @media screen and (min-width: 768px) {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            @media screen and (min-width: 768px) {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            @media screen and (min-width: 768px) {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            @media screen and (min-width: 768px) {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            @media screen and (min-width: 768px) {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            @media screen and (min-width: 768px) {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            @media screen and (min-width: 768px) {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            @media screen and (min-width: 768px) {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            @media screen and (min-width: 768px) {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            @media screen and (min-width: 768px) {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//query lg
+.lg\: {
+    &#{$utility-name} {
+        &-0 {
+            @media screen and (min-width: 992px) {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            @media screen and (min-width: 992px) {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            @media screen and (min-width: 992px) {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            @media screen and (min-width: 992px) {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            @media screen and (min-width: 992px) {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            @media screen and (min-width: 992px) {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            @media screen and (min-width: 992px) {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            @media screen and (min-width: 992px) {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            @media screen and (min-width: 992px) {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            @media screen and (min-width: 992px) {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            @media screen and (min-width: 992px) {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            @media screen and (min-width: 992px) {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//query xl
+.xl\: {
+    &#{$utility-name} {
+        &-0 {
+            @media screen and (min-width: 1200px) {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            @media screen and (min-width: 1200px) {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            @media screen and (min-width: 1200px) {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            @media screen and (min-width: 1200px) {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            @media screen and (min-width: 1200px) {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            @media screen and (min-width: 1200px) {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            @media screen and (min-width: 1200px) {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            @media screen and (min-width: 1200px) {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            @media screen and (min-width: 1200px) {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            @media screen and (min-width: 1200px) {
+                font-size: .9375rem !important;
+            }
+        }
+
+        &-16 {
+            @media screen and (min-width: 1200px) {
+                font-size: 1rem !important;
+            }
+        }
+    
+        &-17 {
+            @media screen and (min-width: 1200px) {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            @media screen and (min-width: 1200px) {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}
+
+//query xxl
+.xxl\: {
+    &#{$utility-name} {
+        &-0 {
+            @media screen and (min-width: 1600px) {
+                font-size: 0 !important;
+            }
+        }
+    
+        &-7 {
+            @media screen and (min-width: 1600px) {
+                font-size: .4375rem !important;
+            }
+        }
+    
+        &-8 {
+            @media screen and (min-width: 1600px) {
+                font-size: .5rem !important;
+            }
+        }
+    
+        &-9 {
+            @media screen and (min-width: 1600px) {
+                font-size: .5625rem !important;
+            }
+        }
+    
+        &-10 {
+            @media screen and (min-width: 1600px) {
+                font-size: .625rem !important;
+            }
+        }
+    
+        &-11 {
+            @media screen and (min-width: 1600px) {
+                font-size: .6875rem !important;
+            }
+        }
+    
+        &-12 {
+            @media screen and (min-width: 1600px) {
+                font-size: .75rem !important;
+            }
+        }
+    
+        &-13 {
+            @media screen and (min-width: 1600px) {
+                font-size: .8125rem !important;
+            }
+        }
+    
+        &-14 {
+            @media screen and (min-width: 1600px) {
+                font-size: .875rem !important;
+            }
+        }
+    
+        &-15 {
+            @media screen and (min-width: 1600px) {
+                font-size: .9375rem !important;
+            }
+        }
+    
+        &-17 {
+            @media screen and (min-width: 1600px) {
+                font-size: 1.0625rem !important;
+            }
+        }
+    
+        &-18 {
+            @media screen and (min-width: 1600px) {
+                font-size: 1.125rem !important;
+            }
+        }
+    }    
+}

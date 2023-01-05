@@ -1,0 +1,22 @@
+$component-name: 'c-button';
+
+.#{$component-name} {
+    transition: all .4s;
+    scale: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-folk-white;
+    background-color: $color-folk-black;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.2;
+    }
+    &__active {
+        background-color: $color-folk-green;
+    }
+}

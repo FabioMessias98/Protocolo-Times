@@ -1,0 +1,12 @@
+// @import '~bootstrap/scss/bootstrap';
+//tailwind
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@import 'base/normalize';
+@import 'base/variables';
+@import 'components/components';
+@import 'utilities/utilities';
+@import 'layouts/layouts';
+@import 'base/generics';

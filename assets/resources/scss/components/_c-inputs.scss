@@ -1,0 +1,15 @@
+$component-name: 'c-input';
+
+.#{$component-name} {
+    &__time {
+        width: 100px;
+        height: 100px;
+        border: 0;
+        outline: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        border-radius: 12px;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}

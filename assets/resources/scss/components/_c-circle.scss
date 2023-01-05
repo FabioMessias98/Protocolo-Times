@@ -1,0 +1,44 @@
+$component-name: 'c-circle';
+
+.#{$component-name} {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #707070;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-folk-white;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .4s;
+        border-radius: 50%;
+        position: absolute;
+        background-image: linear-gradient(to right, $color-folk-purple, $color-folk-pink);  
+        z-index: -1;
+    }
+
+    &:hover {
+        &::before {
+            width: 220px;
+            height: 220px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-folk-aluminium;
+    }
+}
