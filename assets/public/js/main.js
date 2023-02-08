@@ -20354,6 +20354,166 @@ Swiper.use(components);
 
 /***/ }),
 
+/***/ "./resources/js/components/protocol-schedules.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/protocol-schedules.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function () {
+  var buttonsCTA = Array.from(document.getElementsByClassName('js-call-to-action'));
+  var buttonStart = document.querySelector('.js-button-start');
+  var progressBar = document.querySelector('.js-progress-bar');
+  var progressNumber = document.querySelector('.js-progress-number');
+  changeSelect();
+  buttonsCTA.forEach(function (element) {
+    element.addEventListener('click', function () {
+      scrollSection(this);
+    });
+  });
+  buttonStart.addEventListener('click', function () {
+    chooseCalculate();
+  });
+
+  function changeSelect() {
+    if (document.querySelector('.js-select-time')) {
+      var selectsTime = Array.from(document.getElementsByClassName('js-select-time'));
+      var timeItems = Array.from(document.getElementsByClassName('js-select-time-item')); // const selectsCurrent = document.getElementsByClassName( '.js-kind-weather-current' )
+
+      selectsTime.forEach(function (element) {
+        element.addEventListener('click', function () {
+          this.classList.toggle('is-active');
+        });
+      });
+      timeItems.forEach(function (element) {
+        element.addEventListener('click', function () {
+          this.parentElement.parentElement.querySelector('.js-kind-weather-current').innerText = this.innerText;
+        });
+      });
+    }
+  }
+
+  function scrollSection(button) {
+    var sections = document.getElementsByClassName('js-section');
+
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].dataset.value == button.dataset.value) {
+        sections[i].classList.add('hidden');
+        sections[i].classList.remove('flex');
+        sections[++i].classList.add('flex');
+        sections[i].classList.remove('hidden');
+      }
+    }
+  }
+
+  function chooseCalculate() {
+    var timeStudy = document.querySelector('.js-time-study').value;
+    var kindWeatherCurrent = document.querySelector('.js-kind-weather-current').innerText;
+
+    if (kindWeatherCurrent == 'Horas') {
+      calculateHours(timeStudy);
+    } else if (kindWeatherCurrent == 'Minutos') {
+      calculateMinutes(timeStudy);
+    } else {
+      console.log('Nenhum tipo de tempo encontrado!');
+    }
+  }
+
+  function calculateHours(time) {
+    time = time * 60;
+    calculateMinutes(time);
+  }
+
+  function calculateMinutes(time) {
+    var seconds = time * 60;
+    var percentage = 100;
+    var value = percentage / seconds;
+    var progressInterval = setInterval(function () {
+      progressBar.style.width = "".concat(percentage, "%");
+      progressNumber.innerText = "".concat(parseInt(percentage), "%");
+      percentage = percentage - value;
+
+      if (percentage > 25 && percentage < 75) {
+        progressBar.style.backgroundColor = '#472E5F';
+      } else if (percentage > 0 && percentage < 25) {
+        progressBar.style.backgroundColor = '#A855F7';
+      } else if (percentage < 0) {
+        progressBar.style.width = '0%';
+        progressNumber.innerText = '0%';
+        clearInterval(progressInterval);
+      }
+    }, 1000);
+    statusAnswer();
+    waitTimeOut(progressInterval);
+  }
+
+  function statusAnswer() {
+    var timeAnswer = document.querySelector('.js-time-answer').value;
+    var progressAnswer = document.querySelector('.js-progress-answer');
+    var timeStudy = document.querySelector('.js-time-study').value;
+    var percentage = 100;
+    var space = percentage / timeStudy;
+    progressAnswer.style.right = "".concat(space, "%");
+  }
+
+  function waitTimeOut(interval) {
+    var timeAnswer = document.querySelector('.js-time-answer').value;
+    var timeout = timeAnswer * 60 * 1000;
+    setTimeout(function () {
+      showModalAnswer(interval);
+    }, timeout);
+  }
+
+  function showModalAnswer() {
+    var answer = document.querySelector('.js-answer-field').value;
+    var modal = document.querySelector('.js-modal-answer');
+    var text = document.querySelector('.js-modal-answer-text');
+    var buttonConfirm = document.querySelector('.js-modal-answer-button-confirm');
+    pauseProgressBar();
+    modal.classList.add('is-active');
+    text.innerText = answer;
+    buttonConfirm.addEventListener('click', function () {
+      modal.classList.remove('is-active');
+    });
+  }
+
+  function pauseProgressBar() {
+    return;
+  } //     let time = document.getElementById("time");
+  // let stopButton = document.getElementById("stop");
+  // let playButton = document.getElementById("play");
+  // let timeCount = 0,
+  //   currentTimeout;
+  // function play_pause() {
+  //   let status = playButton.innerHTML;
+  //   if (status == "pause") {
+  //     playButton.innerHTML = "Resume";
+  //     clearInterval(currentTimeout);
+  //     return;
+  //   }
+  //   playButton.innerHTML = "pause";
+  //   stopButton.hidden = false;
+  //   clearInterval(currentTimeout);
+  //   currentTimeout = setInterval(() => {
+  //     timeCount++;
+  //     const min = String(Math.trunc(timeCount / 60)).padStart(2, 0);
+  //     const sec = String(Math.trunc(timeCount % 60)).padStart(2, 0);
+  //     time.innerHTML = `${min} : ${sec}`;
+  //   }, 1000);
+  // }
+  // function reset() {
+  //   stopButton.hidden = true;
+  //   playButton.innerHTML = "play";
+  //   clearInterval(currentTimeout);
+  //   timeCount = 0;
+  //   time.innerHTML = `00 : 00`;
+  // }
+
+})();
+
+/***/ }),
+
 /***/ "./resources/js/main.js":
 /*!******************************!*\
   !*** ./resources/js/main.js ***!
@@ -20374,6 +20534,8 @@ __webpack_require__.r(__webpack_exports__);
 
   window.$ = window.jQuery = jQuery;
   window.Swiper = Swiper;
+
+  __webpack_require__(/*! ./components/protocol-schedules */ "./resources/js/components/protocol-schedules.js");
 
   __webpack_require__(/*! ./components/progress-bar */ "./resources/js/components/progress-bar.js");
 })(document, window, jquery__WEBPACK_IMPORTED_MODULE_0___default.a, swiper__WEBPACK_IMPORTED_MODULE_1__["default"]);

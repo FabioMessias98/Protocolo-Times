@@ -12,46 +12,220 @@
         <title>Protocolo Times</title>
     </head>
     <body>
-        <section class="w-full h-screen flex justify-center items-center">
-            <div class="c-circle">
+        <section 
+        class="w-full h-screen flex justify-center items-center js-section"
+        data-value="0">
+            <div 
+            class="c-circle js-call-to-action" 
+            data-value="0">
                 <h4 class="c-circle__text">
                     iniciar
                 </h4>
-            </div>
+            </d>
         </section>
 
-        <section class="w-full h-screen flex flex-col justify-center items-center">
+        <section 
+        class="w-full h-screen hidden flex-col justify-center items-center js-section" 
+        data-value="1">
             <h3 class="text-xl font-bold text-center uppercase text-white">
                 quanto tempo irá estudar?
             </h3>
 
-            <div class="mt-8">
+            <div class="mt-8 flex pb-20">
+                
                 <div class="w-20 h-20 rounded-xl overflow-hidden">
-                    <input
-                    class="w-full h-full outline-0 text-3xl font-bold text-center px-2"
-                    type="">
+
+                    <div class="w-full h-full outline-0 text-3xl flex justify-center items-center bg-white px-2">
+                        <input 
+                        class="w-full h-full outline-0 font-bold text-center js-time-study"
+                        type="text"
+                        value="00">
+                    </div>
                 </div>
 
-                <div>
+                <div class="ml-3">
                     <!-- select -->
                     <div>
-                        <div>
-                            <p>
+                        <div class="c-select-time cursor-pointer js-select-time py-2 px-4">
+                            <p class="text-sm font-bold text-center js-kind-weather-current">
                                 Selecionar
                             </p>
+                            
+                            <div class="c-select-time__items js-select-time-box py-2 px-4">
+                                <p class="text-sm font-bold cursor-pointer js-select-time-item mb-2">
+                                    Minutos
+                                </p>
+
+                                <p class="text-sm font-bold cursor-pointer js-select-time-item mb-2 last:mb-0">
+                                    Horas
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <!-- end select -->
                 </div>
             </div>
+            
+            <div class="w-4/12 flex justify-center">
+
+                <div class="w-full">
+                    <button 
+                    class="c-button-cta js-call-to-action py-2"
+                    data-value="1"
+                    >
+                        Continuar
+                    </button>
+                </div>
+            </div>
         </section>
 
-        <section class="w-full h-screen flex justify-center items-center">
-            <div class="c-circle">
+        <section 
+        class="w-full h-screen hidden flex-col justify-center items-center js-section"
+        data-value="2">
+            <h3 class="text-xl font-bold text-center uppercase text-white">
+                tempo de intervalo
+            </h3>
+
+            <div class="w-full flex flex-wrap justify-center items-center mt-8 pb-20">
+
+                <p class="text-xl font-bold uppercase text-white mr-4">
+                    a cada
+                </p>
+                
+                <div class="w-3/12 flex flex-wrap">
+                    <div class="w-20 h-20 rounded-xl overflow-hidden">
+
+                        <div class="w-full h-full outline-0 text-3xl flex justify-center items-center bg-white px-2">
+                            <input 
+                            class="w-full h-full outline-0 font-bold text-center js-time-answer"
+                            type="text"
+                            value="00">
+                        </div>
+                    </div>
+
+                    <div class="ml-3">
+                        
+                        <div>
+                            <div class="c-select-time cursor-pointer js-select-time py-2 px-4">
+                                <p class="text-sm font-bold text-center js-kind-weather-current">
+                                    Selecionar
+                                </p>
+                                
+                                <div class="c-select-time__items js-select-time-box py-2 px-4">
+                                    <p class="text-sm font-bold cursor-pointer js-select-time-item mb-2">
+                                        Minutos
+                                    </p>
+
+                                    <p class="text-sm font-bold cursor-pointer js-select-time-item mb-2 last:mb-0">
+                                        Horas
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-4/12">
+
+                <div class="w-full">
+                    <button 
+                    class="c-button-cta js-call-to-action py-2"
+                    data-value="2">
+                        Continuar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section 
+        class="w-full h-screen hidden flex-col justify-center items-center js-section"
+        data-value="3">
+            <h3 class="text-xl font-bold text-center uppercase text-white mb-4">
+                qual pergunta fazer durante o estudo?
+            </h3>
+            
+            <div class="w-4/12 flex justify-center mb-4">
+
+                <div class="w-full">
+                    <input 
+                    class="w-full shadow-lg rounded-xl block js-answer-field py-2 px-4"
+                    type="text"
+                    placeholder="Escreva a sua pergunta...">
+                </div>
+            </div>
+
+            <div class="w-4/12 flex justify-center">
+
+                <div class="w-full">
+                    <button 
+                    class="w-full shadow-lg rounded-xl block font-bold text-center uppercase text-white bg-purple-500 hover:bg-purple-900 js-call-to-action py-2"
+                    data-value="3">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section 
+        class="w-full h-screen hidden justify-center items-center js-section"
+        data-value="4">
+            <div 
+            class="c-circle js-call-to-action js-button-start"
+            data-value="4">
                 <h4 class="c-circle__text">
                     começar
                 </h4>
             </div>
         </section>
+
+        <section 
+        class="w-full h-screen hidden justify-center items-center js-section"
+        data-value="5">
+            <div class="w-full flex flex-wrap justify-center">
+                <div class="w-full mb-10">
+                    <h4 class="text-3xl font-bold text-center uppercase text-white">
+                        Estudando...
+                    </h4>
+                </div>
+
+                <div class="w-6/12">
+                    <div class="c-progress-bar">
+                        <div class="c-progress-bar__bar js-progress-bar"></div>
+                        <div class="c-progress-bar__number js-progress-number">100%</div>
+                        <div class="c-progress-bar__answer js-progress-answer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="l-modal-answer js-modal-answer">
+            
+            <div class="container flex justify-center">
+
+                <div class="w-6/12">
+
+                    <h4 class="text-xl font-bold text-center uppercase text-white js-modal-answer-text mb-8">
+                        Pergunta tal
+                    </h4>
+
+                    <div class="flex flex-wrap">
+
+                        <div class="w-full mb-4">
+                            <textarea class="w-full h-48 shadow-lg rounded-xl block font-normal py-2 px-4" placholder="Resposta..."></textarea>
+                        </div>
+
+                        <div class="w-full">
+                            <button class="w-full shadow-lg rounded-xl block font-bold text-center uppercase text-white bg-purple-500 hover:bg-purple-900 js-modal-answer-button-confirm py-2">
+                                Ok
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/public/js/main.js"></script>
     </body>
 </html>

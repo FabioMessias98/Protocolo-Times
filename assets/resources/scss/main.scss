@@ -4,6 +4,12 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 
+//fontawesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
 @import 'base/normalize';
 @import 'base/variables';
 @import 'components/components';

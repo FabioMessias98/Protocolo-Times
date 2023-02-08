@@ -7,6 +7,7 @@ import Swiper from "swiper";
   window.$ = window.jQuery = jQuery;
   window.Swiper = Swiper;
 
+  require( './components/protocol-schedules' );
   require("./components/progress-bar");
 })(document, window, jQuery, Swiper);
   
