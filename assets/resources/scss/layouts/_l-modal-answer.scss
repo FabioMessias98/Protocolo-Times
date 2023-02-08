@@ -1,0 +1,21 @@
+$layout-name: 'l-modal-answer';
+
+.#{$layout-name} {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
