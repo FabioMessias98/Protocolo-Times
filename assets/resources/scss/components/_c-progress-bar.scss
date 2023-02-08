@@ -1,0 +1,41 @@
+$component-name: 'c-progress-bar';
+
+.#{$component-name} {
+    width: 100%;
+    height: 26px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: $color-folk-white;
+
+    &__bar {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all .2s;
+        border-radius: 50px;
+        position: absolute;
+        background-color: #581C87;
+    }
+
+    &__number {
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        position: absolute;
+        font-size: .875rem;
+        font-weight: 700;
+    }
+
+    &__answer {
+        width: 20px;
+        height: 100%;
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        border-radius: 8px;
+        position: absolute;
+        background-color: $color-folk-white;
+    }
+}
