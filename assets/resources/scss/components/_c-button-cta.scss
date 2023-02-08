@@ -1,0 +1,22 @@
+$component-name: 'c-button-cta';
+
+.#{$component-name} {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0.2);
+    border-radius: 8px;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-folk-white;
+    background-color: #A855F7;
+
+    &:hover {
+        background-color: #581C87;
+    }
+
+    &[disabled] {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+}
