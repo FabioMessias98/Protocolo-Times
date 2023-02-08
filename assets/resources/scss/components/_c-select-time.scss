@@ -1,0 +1,47 @@
+$component-name: 'c-select-time';
+
+.#{$component-name} {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    position: relative;
+    background-color: $color-folk-white;
+
+    &::before {
+        content: '\f0d7';
+        top: 50%;
+        right: -1rem;
+        transform: translateY(-50%) rotate(0deg);
+        transition: all .4s;
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 900;
+        font-family: 'Font Awesome 5 Free';
+        color: $color-folk-white;
+    }
+
+    &.is-active {
+        &::before {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+    }
+
+    &__items {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateY(.5rem);
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        border-radius: 8px;
+        position: absolute;
+        background-color: $color-folk-white;
+
+        .is-active & {
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
